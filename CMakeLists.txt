@@ -40,6 +40,8 @@ add_executable(Projeto3 Projeto3.c )
 pico_set_program_name(Projeto3 "Projeto3")
 pico_set_program_version(Projeto3 "0.1")
 
+target_link_libraries(Projeto3 pico_stdlib pico_bootrom)
+
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(Projeto3 1)
 pico_enable_stdio_usb(Projeto3 1)
