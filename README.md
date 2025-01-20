@@ -18,11 +18,11 @@ https://drive.google.com/file/d/16WRQg8hKIsRZEZ9mnBRQ4tgpFUzC58k3/view?usp=shari
 
 1. **Controle de LEDs:**
 
-Comando "green": Liga o LED verde e desliga os outros LEDs.
-Comando "blue": Liga o LED azul e desliga os outros LEDs.
-Comando "red": Liga o LED vermelho e desliga os outros LEDs.
-Comando "white": Liga todos os LEDs simultaneamente, criando uma luz branca.
-Comando "off": Liga todos os LEDs simultaneamente, criando uma luz branca.
+- Comando "green": Liga o LED verde e desliga os outros LEDs.
+- Comando "blue": Liga o LED azul e desliga os outros LEDs.
+- Comando "red": Liga o LED vermelho e desliga os outros LEDs.
+- Comando "white": Liga todos os LEDs simultaneamente, criando uma luz branca.
+- Comando "off": Liga todos os LEDs simultaneamente, criando uma luz branca.
 
 2. **Controle do Buzzer:**
 
