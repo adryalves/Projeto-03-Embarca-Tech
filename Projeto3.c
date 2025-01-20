@@ -3,7 +3,7 @@
 
 int main()
 {
-    // Inicializa a comunicação serial
+    // Inicializa as funções da biblioteca stdio.h
     stdio_init_all();
 
     // Define os pinos dos LEDs e buzzer
@@ -25,6 +25,14 @@ int main()
     gpio_set_dir(LED_AZUL_PIN, GPIO_OUT);
     gpio_set_dir(LED_VERMELHO_PIN, GPIO_OUT);
     gpio_set_dir(BUZZER_PIN, GPIO_OUT);
+    
+    printf("========== MENU ===========/n/n");
+    printf("green - Acende LED verde/n");
+    printf("blue - Acende LED azul/n");
+    printf("red - Acende LED vermelho/n");
+    printf("white - Acende todos os LEDs/n");
+    printf("off - Desliga todos os LEDs/n");
+    printf("buzzer - Liga o Buzzer por 2 segundos/n");
 
     printf("Sistema pronto. Use os comandos para controlar os LEDs e o buzzer.\n");
 
@@ -66,10 +74,10 @@ int main()
 
             else if (input[0] == 'o' && input[1] == 'f' && input[2] == 'f' && input[3] == '\0')
             {
-                gpio_put(LED_VERDE_PIN, 1);
-                gpio_put(LED_AZUL_PIN, 1);
-                gpio_put(LED_VERMELHO_PIN, 1);
-                printf("Todos os LEDs ligados (luz branca).\n");
+                gpio_put(LED_VERDE_PIN, 0);
+                gpio_put(LED_AZUL_PIN, 0);
+                gpio_put(LED_VERMELHO_PIN, 0);
+                printf("Todos os LEDs desligados.\n");
             }
 
             else if (input[0] == 'b' && input[1] == 'u' && input[2] == 'z' && input[3] == 'z' && input[4] == 'e' && input[5] == 'r' && input[6] == '\0')
