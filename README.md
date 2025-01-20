@@ -1,4 +1,4 @@
-# Projeto 02: **Controle de Pinos GPIO com Teclado Matricial**
+# Projeto 03: **Controle de Pinos GPIO com leitura serial**
 **EMBARCATECH - UNIDADE 04**
 
 
